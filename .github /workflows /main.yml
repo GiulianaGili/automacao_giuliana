@@ -79,6 +79,6 @@ jobs:
           echo $COMMIT_SHA
 
           docker tag apicontainer:latest <substituir_aqui>/apicontainer:$COMMIT_SHA
-          docker push <substituir_aqui>/apicontainer:$COMMIT_SHA
+          docker push giulianagili/apicontainer:$COMMIT_SHA
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
